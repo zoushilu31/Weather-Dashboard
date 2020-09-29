@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark justify-content-center">
+    <a class="navbar-brand" href="#">
+       <i class="material-icons">wb_sunny</i>&nbsp;Weather Dashboard</a>
+    </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-md-3 searchbox">
+        <h2 class="text-secondary">Search for a city: </h2>
+          <div class="input-group form-group">
+            <input type="text" class="form-control" id="searchinput" type="search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-primary" id="searchbtn" type="submit">
+                <i class="material-icons">search</i>
+              </button>
+            </div>
+          </div>
+      <div class="mt-5" id="prevSearches">
+ <!-- Buttons for past searches here -->
+      </div>
+        </aside>
+    <div class="col-md-9">
+      <div class="container" id="earthforecast">
+      </div>
+    </div>        
+    </div>
+  </div>
+
+<!--Script, jquery, bootstrap, moment links -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
